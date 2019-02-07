@@ -14,16 +14,16 @@ public class TestDao {
     @Test
     public void insert(){
         User user = new User();
-        user.setName("小明");
-        user.setAddress("河南省新密市");
-        user.setAge(23);
-        user.setSex(1);
+        user.setName("小花");
+        user.setAddress("河南省新郑市");
+        user.setAge(13);
+        user.setSex(0);
         System.out.println(user);
         userDao.insert(user);
     }
     @Test
     public void select(){
-        User userById = userDao.findUserById(1);
+        User userById = userDao.findUserById(2);
         System.out.println(userById);
     }
 }
